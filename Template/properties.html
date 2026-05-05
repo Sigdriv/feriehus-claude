@@ -108,157 +108,38 @@
 
       <div class="container">
 
-        <div class="row gy-4">
+        <!-- Filterpanel – sender nye forespørsler til API ved endring -->
+        <div class="row mb-4 g-2 align-items-end" id="filter-panel">
+          <div class="col-md-3">
+            <label class="form-label fw-semibold">Type</label>
+            <select id="filter-type" class="form-select">
+              <option value="">Alle</option>
+              <option value="rent">Til leie</option>
+              <option value="sale">Til salgs</option>
+            </select>
+          </div>
+          <div class="col-md-3">
+            <label class="form-label fw-semibold">Maks pris (kr/natt)</label>
+            <input id="filter-max-price" type="number" class="form-control" placeholder="f.eks. 15000">
+          </div>
+          <div class="col-md-2">
+            <button id="filter-btn" class="btn btn-primary w-100">Søk</button>
+          </div>
+        </div>
 
-          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="card">
-              <img src="assets/img/properties/property-1.jpg" alt="" class="img-fluid">
-              <div class="card-body">
-                <span class="sale-rent">Rent | $1200</span>
-                <h3><a href="property-single.html" class="stretched-link">204 Mount Olive Road Two</a></h3>
-                <div class="card-content d-flex flex-column justify-content-center text-center">
-                  <div class="row propery-info">
-                    <div class="col">Area</div>
-                    <div class="col">Beds</div>
-                    <div class="col">Baths</div>
-                    <div class="col">Garages</div>
-                  </div>
-                  <div class="row">
-                    <div class="col">340m2</div>
-                    <div class="col">5</div>
-                    <div class="col">2</div>
-                    <div class="col">1</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Property Item -->
-
-          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="card">
-              <img src="assets/img/properties/property-2.jpg" alt="" class="img-fluid">
-              <div class="card-body">
-                <span class="sale-rent">Sale | $350.000</span>
-                <h3><a href="property-single.html" class="stretched-link">647 Molie Road</a></h3>
-                <div class="card-content d-flex flex-column justify-content-center text-center">
-                  <div class="row propery-info">
-                    <div class="col">Area</div>
-                    <div class="col">Beds</div>
-                    <div class="col">Baths</div>
-                    <div class="col">Garages</div>
-                  </div>
-                  <div class="row">
-                    <div class="col">340m2</div>
-                    <div class="col">5</div>
-                    <div class="col">2</div>
-                    <div class="col">1</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Property Item -->
-
-          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="card">
-              <img src="assets/img/properties/property-3.jpg" alt="" class="img-fluid">
-              <div class="card-body">
-                <span class="sale-rent">Sale | $580.000</span>
-                <h3><a href="property-single.html" class="stretched-link">711 Avenue Road</a></h3>
-                <div class="card-content d-flex flex-column justify-content-center text-center">
-                  <div class="row propery-info">
-                    <div class="col">Area</div>
-                    <div class="col">Beds</div>
-                    <div class="col">Baths</div>
-                    <div class="col">Garages</div>
-                  </div>
-                  <div class="row">
-                    <div class="col">340m2</div>
-                    <div class="col">5</div>
-                    <div class="col">2</div>
-                    <div class="col">1</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Property Item -->
-
-          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="card">
-              <img src="assets/img/properties/property-4.jpg" alt="" class="img-fluid">
-              <div class="card-body">
-                <span class="sale-rent">Rent | $6500</span>
-                <h3><a href="property-single.html" class="stretched-link">117 Milk Road</a></h3>
-                <div class="card-content d-flex flex-column justify-content-center text-center">
-                  <div class="row propery-info">
-                    <div class="col">Area</div>
-                    <div class="col">Beds</div>
-                    <div class="col">Baths</div>
-                    <div class="col">Garages</div>
-                  </div>
-                  <div class="row">
-                    <div class="col">340m2</div>
-                    <div class="col">5</div>
-                    <div class="col">2</div>
-                    <div class="col">1</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Property Item -->
-
-          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="card">
-              <img src="assets/img/properties/property-5.jpg" alt="" class="img-fluid">
-              <div class="card-body">
-                <span class="sale-rent">Rent | $3000</span>
-                <h3><a href="property-single.html" class="stretched-link">678 Broad Road</a></h3>
-                <div class="card-content d-flex flex-column justify-content-center text-center">
-                  <div class="row propery-info">
-                    <div class="col">Area</div>
-                    <div class="col">Beds</div>
-                    <div class="col">Baths</div>
-                    <div class="col">Garages</div>
-                  </div>
-                  <div class="row">
-                    <div class="col">340m2</div>
-                    <div class="col">5</div>
-                    <div class="col">2</div>
-                    <div class="col">1</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Property Item -->
-
-          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="card">
-              <img src="assets/img/properties/property-6.jpg" alt="" class="img-fluid">
-              <div class="card-body">
-                <span class="sale-rent">Sale | $650.000</span>
-                <h3><a href="property-single.html" class="stretched-link">974 Denim Road</a></h3>
-                <div class="card-content d-flex flex-column justify-content-center text-center">
-                  <div class="row propery-info">
-                    <div class="col">Area</div>
-                    <div class="col">Beds</div>
-                    <div class="col">Baths</div>
-                    <div class="col">Garages</div>
-                  </div>
-                  <div class="row">
-                    <div class="col">340m2</div>
-                    <div class="col">5</div>
-                    <div class="col">2</div>
-                    <div class="col">1</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Property Item -->
-
+        <!-- Eiendommer lastes inn her av JavaScript -->
+        <div id="properties-grid" class="row gy-4">
+          <div class="col-12 text-center py-5">
+            <div class="spinner-border text-primary" role="status"></div>
+            <p class="mt-2 text-muted">Laster eiendommer…</p>
+          </div>
         </div>
 
       </div>
 
     </section><!-- /Real Estate Section -->
+
+    <script src="assets/js/properties.js"></script>
 
   </main>
 
